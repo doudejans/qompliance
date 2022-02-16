@@ -1,0 +1,337 @@
+[
+    {
+        "name": "ITEM",
+        "columns": [
+            {
+                "name": "I_ID",
+                "type": "INT"
+            },
+            {
+                "name": "I_TITLE",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_A_ID",
+                "type": "INT"
+            },
+            {
+                "name": "I_PUB_DATE",
+                "type": "DATE"
+            },
+            {
+                "name": "I_PUBLISHER",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_SUBJECT",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_DESC",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_RELATED1",
+                "type": "INT"
+            },
+            {
+                "name": "I_RELATED2",
+                "type": "INT"
+            },
+            {
+                "name": "I_RELATED3",
+                "type": "INT"
+            },
+            {
+                "name": "I_RELATED4",
+                "type": "INT"
+            },
+            {
+                "name": "I_RELATED5",
+                "type": "INT"
+            },
+            {
+                "name": "I_THUMBNAIL",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_IMAGE",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_SRP",
+                "type": "INT"
+            },
+            {
+                "name": "I_COST",
+                "type": "INT"
+            },
+            {
+                "name": "I_AVAIL",
+                "type": "DATE"
+            },
+            {
+                "name": "I_STOCK",
+                "type": "INT"
+            },
+            {
+                "name": "I_ISBN",
+                "type": "CHAR"
+            },
+            {
+                "name": "I_PAGE",
+                "type": "INT"
+            },
+            {
+                "name": "I_BACKING",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "I_DIMENSIONS",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    {
+        "name": "COUNTRY",
+        "columns": [
+            {
+                "name": "CO_ID",
+                "type": "INT"
+            },
+            {
+                "name": "CO_NAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "CO_EXCHANGE",
+                "type": "INT"
+            },
+            {
+                "name": "CO_CURRENCY",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    {
+        "name": "AUTHOR",
+        "columns": [
+            {
+                "name": "A_ID",
+                "type": "INT"
+            },
+            {
+                "name": "A_FNAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "A_LNAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "A_MNAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "A_DOB",
+                "type": "DATE"
+            },
+            {
+                "name": "A_BIO",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    {
+        "name": "CUSTOMER",
+        "columns": [
+            {
+                "name": "C_ID",
+                "type": "INT"
+            },
+            {
+                "name": "C_UNAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "C_PASSWD",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "C_FNAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "C_LNAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "C_ADDR_ID",
+                "type": "INT"
+            },
+            {
+                "name": "C_PHONE",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "C_EMAIL",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "C_SINCE",
+                "type": "DATE"
+            },
+            {
+                "name": "C_LAST_VISIT",
+                "type": "DATE"
+            },
+            {
+                "name": "C_LOGIN",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "C_EXPIRATION",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "C_DISCOUNT",
+                "type": "INT"
+            },
+            {
+                "name": "C_BALANCE",
+                "type": "INT"
+            },
+            {
+                "name": "C_YTD_PMT",
+                "type": "INT"
+            },
+            {
+                "name": "C_BIRTHDATE",
+                "type": "DATE"
+            },
+            {
+                "name": "C_DATA",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    {
+        "name": "ORDERS",
+        "columns": [
+            {
+                "name": "O_ID",
+                "type": "INT"
+            },
+            {
+                "name": "O_C_ID",
+                "type": "INT"
+            },
+            {
+                "name": "O_DATE",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "O_SUB_TOTAL",
+                "type": "INT"
+            },
+            {
+                "name": "O_TAX",
+                "type": "INT"
+            },
+            {
+                "name": "O_TOTAL",
+                "type": "INT"
+            },
+            {
+                "name": "O_SHIP_TYPE",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "O_SHIP_DATE",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "O_BILL_ADDR_ID",
+                "type": "INT"
+            },
+            {
+                "name": "O_SHIP_ADDR_ID",
+                "type": "INT"
+            },
+            {
+                "name": "O_STATUS",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    {
+        "name": "ORDER_LINE",
+        "columns": [
+            {
+                "name": "OL_ID",
+                "type": "INT"
+            },
+            {
+                "name": "OL_O_ID",
+                "type": "INT"
+            },
+            {
+                "name": "OL_I_ID",
+                "type": "INT"
+            },
+            {
+                "name": "OL_QTY",
+                "type": "INT"
+            },
+            {
+                "name": "OL_DISCOUNT",
+                "type": "INT"
+            },
+            {
+                "name": "OL_COMMENTS",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    {
+        "name": "CC_XACTS",
+        "columns": [
+            {
+                "name": "CX_O_ID",
+                "type": "INT"
+            },
+            {
+                "name": "CX_TYPE",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "CX_NUM",
+                "type": "INT"
+            },
+            {
+                "name": "CX_NAME",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "CX_EXPIRY",
+                "type": "DATE"
+            },
+            {
+                "name": "CX_AUTH_ID",
+                "type": "CHAR"
+            },
+            {
+                "name": "CX_XACT_AMT",
+                "type": "INT"
+            },
+            {
+                "name": "CX_XACT_DATE",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "CX_CO_ID",
+                "type": "INT"
+            }
+        ]
+    }
+]

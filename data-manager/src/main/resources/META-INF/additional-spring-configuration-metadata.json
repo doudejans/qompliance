@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "data-manager.generate-data",
+      "type": "java.lang.String",
+      "description": "Set true or false depending on whether sample data should be generated using the DataGenerator."
+  }
+] }

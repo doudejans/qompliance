@@ -1,0 +1,9 @@
+name: US PII stays in US
+context:
+  tag:
+    - PII
+  data-location:
+    - United States
+require:
+  data-location:
+    - United States

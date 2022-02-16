@@ -1,0 +1,13 @@
+name: Data scientists and engineers can access car data for product improvement without VIN
+context:
+  tag:
+    - Car Data
+  role:
+    - Data Scientist
+    - Engineer
+  purpose:
+    - Product Improvement
+decision: allow
+require:
+  without:
+    - VIN

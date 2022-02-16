@@ -1,0 +1,97 @@
+ITEM	Table
+I_ID	Numeric, 10 digits
+I_TITLE	Variable text, size 60
+I_A_ID	Numeric, 10 digits
+I_PUB_DATE	Date
+I_PUBLISHER	Variable text, size 60
+I_SUBJECT	Variable text, size 60
+I_DESC	Variable text, size 500
+I_RELATED1	Numeric, 10 digits
+I_RELATED2	Numeric, 10 digits
+I_RELATED3	Numeric, 10 digits
+I_RELATED4	Numeric, 10 digits
+I_RELATED5	Numeric, 10 digits
+I_THUMBNAIL	Image
+I_IMAGE	Image
+I_SRP	Numeric, (15,2) digits
+I_COST	Numeric, (15,2) digits
+I_AVAIL	Date 
+I_STOCK	Numeric, 4 digits
+I_ISBN	Fixed text, size 13
+I_PAGE	Numeric, 4 digits
+I_BACKING	Variable text, size 15
+I_DIMENSIONS	Variable text, size 25
+
+COUNTRY	Table
+CO_ID	Numeric, 4 digits
+CO_NAME	Variable text, size 50
+CO_EXCHANGE	Numeric, (12, 6) digits
+CO_CURRENCY	Variable text, size 18
+
+AUTHOR	Table
+A_ID	Numeric, 10 digits
+A_FNAME	Variable text, size 20
+A_LNAME	Variable text, size 20
+A_MNAME	Variable text, size 20
+A_DOB	Date
+A_BIO	Variable text, size 500
+
+CUSTOMER	Table
+C_ID	Numeric, 10 digits
+C_UNAME	Variable text, size 20
+C_PASSWD	Variable text, size 20
+C_FNAME	Variable text, size 15
+C_LNAME	Variable text, size 15
+C_ADDR_ID	Numeric,  10 digits
+C_PHONE	Variable text, size 16
+C_EMAIL	Variable text, size 50
+C_SINCE	Date
+C_LAST_VISIT	Date
+C_LOGIN	Date and time
+C_EXPIRATION	Date and time
+C_DISCOUNT	Numeric, (3,2) digits
+C_BALANCE	Sign numeric, (15,2) digits
+C_YTD_PMT	Numeric, (15,2) digits
+C_BIRTHDATE	Date 
+C_DATA	Variable text, size 500
+
+ORDERS	Table
+O_ID	Numeric, 10 digits
+O_C_ID	Numeric, 10 digits
+O_DATE	Date and time
+O_SUB_TOTAL	Numeric, (15,2) digits
+O_TAX	Numeric, (15,2) digits
+O_TOTAL	Numeric, (15,2) digits
+O_SHIP_TYPE	Variable text, size 10
+O_SHIP_DATE	Date and time
+O_BILL_ADDR_ID	Numeric, 10 digits
+O_SHIP_ADDR_ID	Numeric, 10 digits
+O_STATUS	Variable text, size 15
+
+ORDER_LINE	Table
+OL_ID	Numeric, 3 digits
+OL_O_ID	Numeric, 10 digits
+OL_I_ID	Numeric, 10 digits
+OL_QTY	Numeric, 3 digits
+OL_DISCOUNT	Numeric, (3,2) digits
+OL_COMMENTS	variable text, size 100
+
+CC_XACTS	Table
+CX_O_ID	Numeric, 10 digits
+CX_TYPE	Variable text, size 10
+CX_NUM	Numeric, 16 digits
+CX_NAME	Variable text, size 31
+CX_EXPIRY	Date
+CX_AUTH_ID	Fixed text, size 15
+CX_XACT_AMT	Numeric, (15,2) digits
+CX_XACT_DATE	Date and time
+CX_CO_ID	Numeric, 4 digits
+
+ADDRESS	Table
+ADDR_ID	Numeric, 10 digits
+ADDR_STREET1	Variable text, size 40
+ADDR_STREET2	Variable text, size 40
+ADDR_CITY	Variable text, size 30
+ADDR_STATE	Variable text, size 20
+ADDR_ZIP	Variable text, size 10
+ADDR_CO_ID	Numeric, 4 digits

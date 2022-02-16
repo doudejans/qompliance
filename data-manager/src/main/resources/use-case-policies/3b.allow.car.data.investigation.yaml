@@ -1,0 +1,9 @@
+name: Car data can be accessed for accident investigation
+context:
+  tag:
+    - Car Data
+  purpose:
+    - Accident Investigation
+  role:
+    - Investigator
+decision: allow

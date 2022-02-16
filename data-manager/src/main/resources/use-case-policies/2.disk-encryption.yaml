@@ -1,0 +1,7 @@
+name: PII has to reside on a disk-encrypted datastore
+context:
+  tag:
+    - PII
+require:
+  storage-classification:
+    - DiskEncrypted

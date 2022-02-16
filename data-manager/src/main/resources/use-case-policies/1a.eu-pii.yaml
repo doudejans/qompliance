@@ -1,0 +1,9 @@
+name: EU PII stays in EU
+context:
+  tag:
+    - PII
+  data-location:
+    - EU
+require:
+  data-location:
+    - EU
