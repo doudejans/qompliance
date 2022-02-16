@@ -34,7 +34,7 @@ Both modules expose a REST API for interacting with the subsystems.
 
 This project needs a PostgreSQL database for storing and managing the (meta)data in the system.
 For a new development environment, please make sure that you have a PostgreSQL database running.
-For example, use the following Docker command which starts a PostgreSQL database called `compliance` (with a weak password!) with a mounted volume to persist the data:
+For example, use the following Docker command which starts a PostgreSQL database called `qompliance` (with a weak password!) with a mounted volume to persist the data:
 
 ```sh
 docker run -d -v ~/docker_volumes/qompliance/:/var/lib/postgresql/data -e POSTGRES_USER=qompliance -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
@@ -90,11 +90,11 @@ context:
   purpose:
     - Marketing
   data-location:
-    - Europe
+    - EU
 decision: allow
 require:
   data-location:
-    - Europe'
+    - EU'
 ```
 
 ## Configure
